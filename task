@@ -1,0 +1,15 @@
+0) Povtorite
+
+https://docs.docker.com/compose/gettingstarted/
+
+1) Nuzhno peredelat’ instruktsii dlya Docker ML pod docker-compose
+
+https://hub.docker.com/r/dalilasalamani/ml_dockerimage/
+
+docker-compose up dolzhen zapustit’ komandu:
+
+docker run -it -p 8887:8887 dalilasalamani/ml_dockerimage:v1 bash -c "mkdir /opt/notebooks && jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --port=8887 --no-browser –allow-root”
+
+2) razrabotat’ svoj Dockerfile dlya dalilasalamani/ml_dockerimage na osnove:
+
+https://gitlab.cern.ch/dasalama/ML_DokerImage

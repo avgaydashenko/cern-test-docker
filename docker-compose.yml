@@ -1,0 +1,9 @@
+#docker run -it -p 8887:8887 dalilasalamani/ml_dockerimage:v1 bash -c "mkdir /opt/notebooks && jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --port=8887 --no-browser --allow-root"
+
+version: '3'
+services:
+  ml-docker:
+    image: "dalilasalamani/ml_dockerimage:v1"
+    ports:
+     - "8887:8887"
+    command: bash -c "mkdir /opt/notebooks && jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --port=8887 --no-browser --allow-root"
