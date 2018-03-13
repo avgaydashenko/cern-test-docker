@@ -1,4 +1,8 @@
-version: '3'
+version: '3.2'
 services:
   higgsml:
     build: .
+    volumes:
+     - ./higgsml:/usr/share/higgsml
+    tty: true
+    stdin_open: true

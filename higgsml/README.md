@@ -1,2 +1,1 @@
-`docker-compose build`
-`docker-compose run higgsml`
+`docker-compose up -d`
